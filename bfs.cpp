@@ -192,22 +192,12 @@ int main(){
 
     fill(grid);
 
-    time_t start,end;
-    time(&start);
-
     bool sol = solve(grid);
     if(sol == true){
         print(grid);
     }else{
         cout << "No Solution" << endl;
     }
-
-    time(&end);
-
-    double time_taken = double(end - start); 
-    cout << "Time taken by program is : " << fixed 
-         << time_taken; 
-    cout << " sec " << endl; 
 
 
     return 0;
